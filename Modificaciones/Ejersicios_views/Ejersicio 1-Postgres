@@ -1,0 +1,7 @@
+CREATE VIEW peliculas_por_ranting AS
+SELECT COUNT(title) AS peliculas,rating
+	FROM film
+	GROUP BY rating;
+
+SELECT * FROM peliculas_por_ranting
+where rating = 'PG';
