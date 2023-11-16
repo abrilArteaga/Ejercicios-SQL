@@ -1,0 +1,10 @@
+1_Importar la base de datos sakila de peliculas y actores en el Postgres. El archivo que está junto a esta consigna incluye las tablas de dos bases de datos (chinook y sakila). Eliminar las tablas que no son necesarias (Si no lo pueden hacer andar es posible hacer los siguientes puntos en el SqliteBrowser)
+
+//_CREATE VIEW datos_alquiler
+SELECT length AS duracion, c.firts_name AS Nombre_completo, f.first_name AS Nombre_peliculas,r.last_update AS Fechas_alquileres
+FROM rental r JOIN customer c USING (custoner_id)
+JOIN staff s USING _//
+
+2_Crear una vista (VIEW) que muestre de cada alquiler su duración (rental duration), el nombre completo del cliente, el nombre de la película y la fecha de alquiler.
+
+INSERT INTO actor a.first_name
